@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>あなたの不動産、今いくら？｜東急リバブル</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- header area -->
+    <header>
+      <div class="header">
+        <div class="maxWidth">
+          <!-- スマホ用画像 -->
+          <img id="livable_logo_white_vertical" src="../img/smp/livable_logo_white_vertical.png"
+            alt="livable_logo_white_vertical">
+          <!-- PC用画像 -->
+          <img id="livable_logo_white" src="../img/pc/livable_logo_white.png" alt="livable_logo_white_vertical">
+        </div>
+      </div>
+    </header>
+
+    <!-- main area -->
+    <main>
+      <div class="imageArea2">
+        <div class="row maxWidth">
+          <div class="col-md-7">
+            <!-- 査定エリア -->
+            <div class="imageArea1">
+              <!-- スマホ用画像 -->
+              <img id="s_index_ti01" src="../img/smp/index_ti01.jpg" alt="">
+              <!-- PC用画像 -->
+              <img id="p_index_ti01" src="../img/pc/index_ti01.png" alt="">
+
+              <img id="index_ti02" src="./img/smp/index_ti02.png" alt="index_ti02">
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <form class="form1" name="form1">
+              <!-- 入力エリア -->
+              <div class="formArea">
+                <!-- p -->
+                <img id="p_index_ti02" src="./img/pc/index_ti02.png" alt="p_index_ti02">
+
+                <img src="./img/smp/index_tx01.png" alt="index_tx01">
+                <div class="form">
+                  <!-- select area1 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <p class="formStyle1">物件種別</p>
+                      <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                    </div>
+                    <div class="col">
+                      <select name="select1" id="select1">
+                        <option value="0">選択してください</option>
+                        <option value="1">マンション</option>
+                        <option value="2">一戸建て</option>
+                        <option value="3">土地</option>
+                        <option value="4">その他</option>
+                      </select>
+                    </div>
+                    <div class="col-2 okArea">
+                      <p id="ok1" class="ok">OK</p>
+                    </div>
+                  </div><!-- select area1-end -->
+
+                  <img src="./img/smp/index_tx02.png" alt="index_tx02">
+
+                  <!-- select area2 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <p class="formStyle1">都道府県</p>
+                      <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                    </div>
+                    <div class="col">
+                      <select name="select2" id="select2">
+                        <option value="0">選択してください</option>
+                        <option value="1">マンション</option>
+                        <option value="2">一戸建て</option>
+                        <option value="3">土地</option>
+                        <option value="4">その他</option>
+                      </select>
+                    </div>
+                    <div class="col-2 okArea">
+                      <p id="ok2"  class="ok">OK</p>
+                    </div>
+                  </div><!-- select area2-end -->
+
+                  <!-- select area3 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <p class="formStyle1">市区町村</p>
+                      <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                    </div>
+                    <div class="col">
+                      <select name="select3" id="select3">
+                        <option value="0">選択してください</option>
+                        <option value="1">マンション</option>
+                        <option value="2">一戸建て</option>
+                        <option value="3">土地</option>
+                        <option value="4">その他</option>
+                      </select>
+                    </div>
+                    <div class="col-2 okArea">
+                      <p id="ok3"  class="ok">OK</p>
+                    </div>
+                  </div><!-- select area3-end -->
+
+                  <!-- select area4 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <p class="formStyle1">町名</p>
+                      <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                    </div>
+                    <div class="col">
+                      <select name="select4" id="select4">
+                        <option value="0">選択してください</option>
+                        <option value="1">マンション</option>
+                        <option value="2">一戸建て</option>
+                        <option value="3">土地</option>
+                        <option value="4">その他</option>
+                      </select>
+                    </div>
+                    <div class="col-2 okArea">
+                      <p id="ok4"  class="ok">OK</p>
+                    </div>
+                  </div><!-- select area4-end -->
+
+                  <!-- select area5 -->
+                  <div class="row">
+                    <div class="col-2">
+                      <p class="formStyle1">丁目</p>
+                      <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                    </div>
+                    <div class="col">
+                      <select name="select5" id="select5">
+                        <option value="0">選択してください</option>
+                        <option value="1">マンション</option>
+                        <option value="2">一戸建て</option>
+                        <option value="3">土地</option>
+                        <option value="4">その他</option>
+                      </select>
+                    </div>
+                    <div class="col-2 okArea">
+                      <p id="ok5"  class="ok">OK</p>
+                    </div>
+                  </div><!-- select area5-end -->
+
+                  <!-- buttom -->
+                  <div id="btn1" class="button1">
+                    <input id="input1" class="mail" type="button" value="メールで無料査定に申込む" disabled="disabled">
+                  </div>
+                  <div id="btn2" class="button1">
+                    <input id="input2" class="tel" type="button" value="電話で無料査定に申込む" disabled="disabled">
+                  </div>
+
+                </div><!-- form-end -->
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 理由０ -->
+      <div class="reason0">
+        <div class="maxWidth2">
+          <!-- s -->
+          <div id="s_index_ti05">
+            <p class="textStyle4">不動産の売却をお考えの皆様</p>
+            <p class="textStyle5">こんな<span>ご希望</span>ありませんか？</p>
+          </div>
+          <!-- p -->
+          <img id="p_index_ti05" src="./img/pc/index_ti05.png" alt="index_ti05">
+
+          <!-- s -->
+          <img id="index_tx03" src="./img/smp/index_tx03.jpg" alt="index_tx03">
+          <!-- p -->
+          <img id="index_im02" src="./img/pc/index_im02.jpg" alt="index_im02">
+
+          <!-- s -->
+          <div id="index_bg01">
+            <p>それなら東急リバブルにおまかせください！！</p>
+            <img src="./img/smp/index_bg01.png" alt="index_bg01">
+          </div>
+          <!-- p -->
+          <img id="index_tx04" src="./img/pc/index_tx04.png" alt="index_tx04">
+
+          <!-- s -->
+          <h2 id="s_index_ti06">東急リバブルが選ばれる理由</h2>
+        </div>
+      </div>
+
+      <!-- 理由１ -->
+      <div class="reason1">
+        <div class="maxWidth2">
+          <!-- section title -->
+          <!-- s -->
+          <div class="row sectionTitle">
+            <div class="col-auto titleNum">1.</div>
+            <div class="col-auto textStyle">
+              <p class="textStyle1">やっぱり安心！</p>
+              <p class="textStyle2">豊富な不動産取引実績</p>
+            </div>
+          </div><!-- section title -->
+          <!-- p -->
+          <h2>
+            <img id="index_ti06" src="./img/pc/index_ti06.png" alt="index_ti06">
+          </h2>
+          <img id="p_index_ti07" src="./img/pc/index_ti07.png" alt="index_ti07">
+
+          <!-- s -->
+          <img id="s_index_tx05" src="./img/smp/index_tx05.png" alt="index_tx05">
+          <!-- p -->
+          <div class="row">
+            <div class="col-md">
+              <img id="p_index_tx05" src="./img/pc/index_tx05.png" alt="index_tx05">
+
+              <p class="textStyle3">
+                1日なら約70件、21分に1件の計算になります。<br>
+                毎日の豊富な実績の積み重ねによるノウハウが私たちの武器です。
+              </p>
+            </div>
+
+            <div class="col-md">
+              <!-- s -->
+              <img id="index_im01" src="./img/smp/index_im01.png" alt="index_im01">
+              <!-- p -->
+              <img id="p_index_im03" src="./img/pc/index_im03.png" alt="p_index_im03">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 理由２ -->
+      <div class="reason2">
+        <div class="maxWidth2">
+          <!-- section title -->
+          <!-- s -->
+          <div class="row  sectionTitle">
+            <div class="col-auto titleNum">2.</div>
+            <div class="col-auto textStyle">
+              <p class="textStyle1">独自の多彩な販売チャネルで</p>
+              <p class="textStyle2">早期売却を実現！</p>
+            </div>
+          </div><!-- section title -->
+          <!-- p -->
+          <img id="index_ti08" src="./img/pc/index_ti08.png" alt="index_ti08">
+
+          <div class="row">
+            <div class="col-md">
+              <h2 class="h2Style1">幅広く膨大な購入希望者にアプローチしてマッチング！</h2>
+              <p class="textStyle3">多彩なチャネルを通じて、幅広い不動産ご購入希望者様に、お客様の物件をスピーディーにご紹介するため早期売却が期待できます。</p>
+            </div>
+            <div class="col-md-auto">
+              <!-- s -->
+              <img id="s_index_im02" src="./img/smp/index_im02.png" alt="s_index_im02">
+              <!-- p -->
+              <img id="p_index_im04" src="./img/pc/index_im04.png" alt="p_index_im04">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 理由３ -->
+      <div class="reason3">
+        <div class="maxWidth2">
+          <!-- section title -->
+          <!-- s -->
+          <div class="row  sectionTitle">
+            <div class="col-auto titleNum">3.</div>
+            <div class="col-auto textStyle">
+              <p class="textStyle1">万一、売れなくても</p>
+              <p class="textStyle2">リバブルが購入！</p>
+            </div>
+          </div><!-- section title -->
+          <!-- p -->
+          <img id="index_ti09" src="./img/pc/index_ti09.png" alt="index_ti09">
+
+          <div class="row">
+            <div class="col-md">
+              <h2 class="h2Style1">いつ？いくらで売れる？不安を解消！</h2>
+              <p class="textStyle3">期日内に売れない場合は、東急リバブルが買主となり お客様のご所有不動産を直接購入いたします。（当社審査後）</p>
+            </div>
+
+            <div class="col-md">
+              <!-- s -->
+              <img id="index_tx06" src="./img/smp/index_tx06.jpg" alt="index_tx06">
+              <!-- p -->
+              <img id="index_im07" src="./img/pc/index_im07.jpg" alt="index_im07">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 理由４ -->
+      <div class="reason4">
+        <div class="maxWidth2">
+          <!-- section title -->
+          <!-- s -->
+          <div class="row  sectionTitle">
+            <div class="col-auto titleNum">4.</div>
+            <div class="col-auto textStyle">
+              <p class="textStyle1">意外と多い売却後のトラブル</p>
+              <p class="textStyle2">売却後の補修費用も保証！</p>
+            </div>
+          </div><!-- section title -->
+          <!-- p -->
+          <img id="index_ti12" src="./img/pc/index_ti12.png" alt="index_ti12">
+
+          <!-- s -->
+          <h2 id="s_h2Style1" class="h2Style1">「リバブルあんしん仲介保証」なら<br>
+            瑕疵対応費用をリバブルが保証！</h2>
+          <!-- p -->
+          <h2 id="p_h2Style1" class="h2Style1">「リバブルあんしん仲介保証」なら
+            瑕疵対応費用をリバブルが保証！</h2>
+
+          <p class="textStyle3">
+            無料で建物・住宅設備検査を行い、補修費用を最長2年間、最大500万円まで保証します。
+          </p>
+
+          <!-- s -->
+          <img id="index_im03" src="./img/smp/index_im03.png" alt="index_im03">
+          <!-- p -->
+          <img id="index_im08" src="./img/pc/index_im08.png" alt="index_im08">
+
+          <p class="annotation">
+            ※仲介保証・住宅設備保証の保証期間（最長2年間）は、2016年6月9日以降に売買契約を締結され、保証申込みされた方に適用されます。
+          </p>
+          <p class="annotation">
+            ※雨漏り、建物構造上主要な部位の木部の腐蝕（一戸建のみ）、給排水管の故障、シロアリの害に対する駆除・補修費用、上限500万円（税込・免責なし）
+          </p>
+        </div>
+      </div>
+
+      <!-- 理由５ -->
+      <div class="reason5">
+        <div class="maxWidth2">
+          <!-- section title -->
+          <!-- s -->
+          <div class="row  sectionTitle">
+            <div class="col-auto titleNum">5.</div>
+            <div class="col-auto textStyle">
+              <p class="textStyle1">不動産に関する疑問・不安は</p>
+              <p class="textStyle2">プロがサポート！</p>
+            </div>
+          </div><!-- section title -->
+          <!-- p -->
+          <img id="index_ti14" src="./img/pc/index_ti14.png" alt="index_ti14">
+          <div class="row">
+            <div class="col-md">
+
+              <!-- s -->
+              <div class="titleStyle1">
+                <p>
+                  営業マンの約98％※が「宅地建物取引士」<br>
+                  市況に合わせた価格や売り時をアドバイス
+                </p>
+              </div>
+              <!-- p -->
+              <img id="index_ti19" src="./img/pc/index_ti19.png" alt="index_ti19">
+
+              <!-- s -->
+              <img id="s_index_im04" src="./img/smp/index_im04.jpg" alt="s_index_im04">
+              <!-- p -->
+              <img id="index_im11" src="./img/pc/index_im11.jpg" alt="index_im11">
+
+              <p class="annotation">
+                ※2019年12月1日時点、当社売買仲介営業職（管理職含む）における宅建保有率
+              </p>
+            </div>
+            <div class="col-md">
+              <!-- s -->
+              <div class="titleStyle1">
+                <p>不動産に関する税務や法律について専門家による無料相談会を実施！</p>
+              </div>
+              <!-- p -->
+              <img id="index_ti20" src="./img/pc/index_ti20.png" alt="index_ti20">
+
+              <!-- s -->
+              <img id="index_im05" src="./img/smp/index_im05.jpg" alt="index_im05">
+              <!-- p -->
+              <img id="index_im12" src="./img/pc/index_im12.jpg" alt="index_im12">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 査定エリア -->
+      <div class="maxWidth3 marginStyle">
+        <div class="maxWidth2">
+          <div class="imageArea1">
+            <!-- s -->
+            <div id="s_imageArea">
+              <img id="index_ti10" src="./img/smp/index_ti10.png" alt="index_ti10">
+              <img id="index_tx07" src="./img/smp/index_tx07.jpg" alt="index_tx07">
+              <img src="./img/smp/index_ti11.png" alt="index_ti11" id="index_ti11">
+            </div>
+            <!-- p -->
+            <div id="p_imageArea">
+              <img id="index_ti17" src="./img/pc/index_ti17.png" alt="index_ti17">
+              <img id="index_im13" src="./img/pc/index_im13.png" alt="index_im13">
+              <img id="index_ti18" src="./img/pc/index_ti18.png" alt="index_ti18">
+            </div>
+
+            <form class="form1" name="form2">
+              <div id="p_formArea">
+                <img src="./img/pc/index_tx02.png" alt="index_tx02">
+  
+                <div class="row form">
+                  <div class="col-md">
+                    <!-- select area1 -->
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="formStyle1">物件種別</p>
+                        <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                      </div>
+                      <div class="col">
+                        <select name="select6" id="select6">
+                          <option value="0">選択してください</option>
+                          <option value="1">マンション</option>
+                          <option value="2">一戸建て</option>
+                          <option value="3">土地</option>
+                          <option value="4">その他</option>
+                        </select>
+                      </div>
+                      <div class="col-2 okArea">
+                        <p id="ok6"  class="ok">OK</p>
+                      </div>
+                    </div><!-- select area1-end -->
+                  </div>
+                  <div class="col-md"></div>
+                </div>
+  
+                <img id="p_index_tx03" src="./img/pc/index_tx03.png" alt="index_tx03">
+  
+                <div class="row form arrow">
+                  <!-- select area2 -->
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="formStyle1">都道府県</p>
+                        <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                      </div>
+                      <div class="col">
+                        <select name="select7" id="select7">
+                          <option value="0">選択してください</option>
+                          <option value="1">マンション</option>
+                          <option value="2">一戸建て</option>
+                          <option value="3">土地</option>
+                          <option value="4">その他</option>
+                        </select>
+                      </div>
+                      <div class="col-2 okArea">
+                        <p  id="ok7" class="ok">OK</p>
+                      </div>
+                    </div>
+                  </div><!-- select area2-end -->
+  
+                  <!-- select area3 -->
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="formStyle1">市区町村</p>
+                        <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                      </div>
+                      <div class="col">
+                        <select name="select8" id="select8">
+                          <option value="0">選択してください</option>
+                          <option value="1">マンション</option>
+                          <option value="2">一戸建て</option>
+                          <option value="3">土地</option>
+                          <option value="4">その他</option>
+                        </select>
+                      </div>
+                      <div class="col-2 okArea">
+                        <p id="ok8"  class="ok">OK</p>
+                      </div>
+                    </div>
+                  </div><!-- select area3-end -->
+  
+                  <div class="col-md-12">
+                    <hr>
+                  </div>
+  
+                  <!-- select area4 -->
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="formStyle1">町名</p>
+                        <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                      </div>
+                      <div class="col">
+                        <select name="select9" id="select9">
+                          <option value="0">選択してください</option>
+                          <option value="1">マンション</option>
+                          <option value="2">一戸建て</option>
+                          <option value="3">土地</option>
+                          <option value="4">その他</option>
+                        </select>
+                      </div>
+                      <div class="col-2 okArea">
+                        <p id="ok9"  class="ok">OK</p>
+                      </div>
+                    </div>
+                  </div><!-- select area4-end -->
+  
+                  <!-- select area5 -->
+                  <div class="col-md-6">
+  
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="formStyle1">丁目</p>
+                        <img class="required" src="./img/smp/index_ic01.png" alt="index_ic01">
+                      </div>
+                      <div class="col">
+                        <select name="select10" id="select10">
+                          <option value="0">選択してください</option>
+                          <option value="1">マンション</option>
+                          <option value="2">一戸建て</option>
+                          <option value="3">土地</option>
+                          <option value="4">その他</option>
+                        </select>
+                      </div>
+                      <div class="col-2 okArea">
+                        <p id="ok10"  class="ok">OK</p>
+                      </div>
+                    </div>
+                  </div><!-- select area5-end -->
+                </div>
+  
+                <!-- buttom -->
+                <div class="row">
+                  <div class="col-md">
+                    <div id="btn3" class="button1 button2">
+                      <input class="mail" type="button" value="メールで無料査定に申込む" disabled="disabled">
+                    </div>
+                  </div>
+  
+                  <div class="col-md">
+                    <div id="btn4" class="button1">
+                      <input class="tel" type="button" value="電話で無料査定に申込む" disabled="disabled">
+                    </div>
+                  </div>
+                </div>
+  
+  
+              </div>
+            </form>
+
+          </div>
+
+          <!-- 入力エリア -->
+          <!-- s -->
+          <form class="form1" name="form3">
+            <div id="s_formArea" class="formArea marginTop">
+              <img src="./img/smp/index_tx01.png" alt="index_tx01">
+              <div class="form">
+                <!-- select area1 -->
+                <div class="row">
+                  <div class="col-2">
+                    <p class="formStyle1">物件種別</p>
+                    <img src="./img/smp/index_ic01.png" alt="index_ic01">
+                  </div>
+                  <div class="col">
+                    <select name="select11" id="select11">
+                      <option value="0">選択してください</option>
+                      <option value="1">マンション</option>
+                      <option value="2">一戸建て</option>
+                      <option value="3">土地</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </div>
+                  <div class="col-2 okArea">
+                    <p id="ok11"  class="ok">OK</p>
+                  </div>
+                </div><!-- select area1-end -->
+  
+                <img src="./img/smp/index_tx02.png" alt="index_tx02">
+  
+                <!-- select area2 -->
+                <div class="row">
+                  <div class="col-2">
+                    <p class="formStyle1">都道府県</p>
+                    <img src="./img/smp/index_ic01.png" alt="index_ic01">
+                  </div>
+                  <div class="col">
+                    <select name="select12" id="select12">
+                      <option value="0">選択してください</option>
+                      <option value="1">マンション</option>
+                      <option value="2">一戸建て</option>
+                      <option value="3">土地</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </div>
+                  <div class="col-2 okArea">
+                    <p id="ok12"  class="ok">OK</p>
+                  </div>
+                </div><!-- select area2-end -->
+  
+                <!-- select area3 -->
+                <div class="row">
+                  <div class="col-2">
+                    <p class="formStyle1">市区町村</p>
+                    <img src="./img/smp/index_ic01.png" alt="index_ic01">
+                  </div>
+                  <div class="col">
+                    <select name="select13" id="select13">
+                      <option value="0">選択してください</option>
+                      <option value="1">マンション</option>
+                      <option value="2">一戸建て</option>
+                      <option value="3">土地</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </div>
+                  <div class="col-2 okArea">
+                    <p id="ok13"  class="ok">OK</p>
+                  </div>
+                </div><!-- select area3-end -->
+  
+                <!-- select area4 -->
+                <div class="row">
+                  <div class="col-2">
+                    <p class="formStyle1">町名</p>
+                    <img src="./img/smp/index_ic01.png" alt="index_ic01">
+                  </div>
+                  <div class="col">
+                    <select name="select14" id="select14">
+                      <option value="0">選択してください</option>
+                      <option value="1">マンション</option>
+                      <option value="2">一戸建て</option>
+                      <option value="3">土地</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </div>
+                  <div class="col-2 okArea">
+                    <p id="ok14"  class="ok">OK</p>
+                  </div>
+                </div><!-- select area4-end -->
+  
+                <!-- select area5 -->
+                <div class="row">
+                  <div class="col-2">
+                    <p class="formStyle1">丁目</p>
+                    <img src="./img/smp/index_ic01.png" alt="index_ic01">
+                  </div>
+                  <div class="col">
+                    <select name="select15" id="select15">
+                      <option value="0">選択してください</option>
+                      <option value="1">マンション</option>
+                      <option value="2">一戸建て</option>
+                      <option value="3">土地</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </div>
+                  <div class="col-2 okArea">
+                    <p id="ok15"  class="ok">OK</p>
+                  </div>
+                </div><!-- select area5-end -->
+  
+                <!-- buttom -->
+                <div id="btn5" class="button1">
+                  <input class="mail" type="button" value="メールで無料査定に申込む">
+                </div>
+                <div id="btn6" class="button1">
+                  <input class="tel" type="button" value="電話で無料査定に申込む">
+                </div>
+  
+              </div><!-- form-end -->
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- footer area -->
+    <footer>
+      <div class="row">
+        <div class="col-auto col-md-3">
+          <img src="./img/smp/getseal.gif" alt="getseal" id="getseal">
+        </div>
+        <div class="col col-md auto">
+          <p>
+            東急リバブルへの個人情報送信は、SSL暗号化通信にて安全に行っていただけます。</p>
+        </div>
+      </div>
+
+      <div class="maxWidth3">
+        <div class="footerArea">
+          <div class="row">
+            <div class="col-md order-md-2 catchcopy">
+              <img id="catchcopy" src="./img/smp/livable_logo_catchcopy.png" alt="catchcopy">
+            </div>
+
+            <div class="col-md order-md-1">
+              <p class="copyright">© TOKYU LIVABLE,INC.All Right Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
